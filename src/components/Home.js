@@ -2,15 +2,14 @@ import React from "react";
 import profilePic from "../img/profilePic.jpeg";
 import git from "../img/git.svg";
 import slack from "../img/slack.svg";
-import internLogo from "../img/internLogo.png";
-import I4G from "../img/I4G.png";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
     <div className="container">
       <div className="profile">
         <img id="profile__img" src={profilePic} alt="Profile" />
-        <h4 id="twitter">Haymosx</h4>
+        <h4 id="twitter">Akinbande Amos</h4>
       </div>
       <div className="links">
         <ul>
@@ -72,14 +71,7 @@ const Home = () => {
           <img src={git} alt="github" />
         </a>
       </div>
-      <div className="footer">
-        <div className="line"></div>
-        <div className="footer_cont">
-          <img src={internLogo} alt="internLogo" className="int" />
-          <h5>HNG Internship 9 Frontend Task</h5>
-          <img src={I4G} alt="i4g" className="i4g" />
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

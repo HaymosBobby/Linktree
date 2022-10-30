@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -21,3 +22,4 @@ ul {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @import "home";
+@import "not_found";
