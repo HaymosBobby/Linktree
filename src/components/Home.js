@@ -3,6 +3,9 @@ import profilePic from "../img/profilePic.jpeg";
 import git from "../img/git.svg";
 import slack from "../img/slack.svg";
 import Footer from "./Footer";
+import share_right from "../img/share_right.svg";
+import share_dot from "../img/share_dot.svg";
+import share_link from "../img/share_link.svg";
 
 const Home = () => {
   return (
@@ -10,6 +13,22 @@ const Home = () => {
       <div className="profile">
         <img id="profile__img" src={profilePic} alt="Profile" />
         <h4 id="twitter">Akinbande Amos</h4>
+      </div>
+      <div className="desk_icon share">
+        <a href="/">
+          <img src={share_right} alt="" />
+        </a>
+        <div className="share_link share_link_desk">
+          <img src={share_link} alt="share" />
+        </div>
+      </div>
+      <div className="mob_icon share">
+        <a href="/">
+          <img src={share_dot} alt="" />
+        </a>
+        <div className="share_link share_link_mob">
+          <img src={share_link} alt="share" />
+        </div>
       </div>
       <div className="links">
         <ul>

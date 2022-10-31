@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
-import arrow_left from "../img/arrow_left.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
@@ -17,7 +18,7 @@ const NotFound = () => {
         </h4>
         <div className="button">
           <Link to="/" className="btn btn_light">
-            <img src={arrow_left} alt="back" /> Go back
+            <FontAwesomeIcon icon={faArrowLeft} /> Go back
           </Link>
           <a href="/" className="btn btn_pry">
             Take me home
