@@ -6,13 +6,20 @@ import Footer from "./Footer";
 import share_right from "../img/share_right.svg";
 import share_dot from "../img/share_dot.svg";
 import share_link from "../img/share_link.svg";
+import camera from "../img/camera.svg";
 
 const Home = () => {
   return (
     <div className="container">
       <div className="profile">
-        <img id="profile__img" src={profilePic} alt="Profile" />
+        <div>
+          <img id="profile__img" src={profilePic} alt="Profile" />
+        </div>
+
+        <img className="cam" src={camera} alt="camera" />
+
         <h4 id="twitter">Akinbande Amos</h4>
+        <h4 id="slack">Slack username</h4>
       </div>
       <div className="desk_icon share">
         <a href="/">
